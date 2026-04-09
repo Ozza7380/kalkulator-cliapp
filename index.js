@@ -5,6 +5,7 @@ console.log("=== KALKULATOR SEDERHANA ===");
 while (true) {
     console.log("\nMenu:");
     console.log("1. Hitung");
+    console.log("2. modulus")
     console.log("0. Keluar");
 
 const menu = prompt("Pilih: ");
@@ -39,7 +40,19 @@ if (menu === "1") {
     }
 
     console.log("Hasil: ", hasil);
-  } else {
+    } else if (menu === "2") {
+    const a = Number(prompt("Angka pertama: "));
+    const b = Number(prompt("Angka kedua: "));
+
+    let hasil;
+    
+    if (b === 0) {
+        console.log("Tidak dapat ditemukan!")
+    } else {
+        hasil = a % b;
+        console.log("Hasil: ", hasil)
+    }
+    } else {
     console.log("Menu tidak valid!")
- }
+ } 
 }
