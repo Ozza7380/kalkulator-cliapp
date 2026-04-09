@@ -19,6 +19,11 @@ if (menu === "1") {
     const a = Number(prompt("Angka pertama: "));
     const b = Number(prompt("Angka kedua: "));
     const op = prompt("Operator (+ - * /)");
+    
+    if (isNaN(a)  ||  isNaN(b)) {
+        console.log("Harus menggunakan angka!!")
+        continue;
+    }
 
     let hasil;
 
@@ -43,7 +48,10 @@ if (menu === "1") {
     } else if (menu === "2") {
     const a = Number(prompt("Angka pertama: "));
     const b = Number(prompt("Angka kedua: "));
-
+    if (isNaN(a)  ||  isNaN(b)) {
+        console.log("Harus menggunakan angka!!")
+        continue;
+    }
     let hasil;
     
     if (b === 0) {
